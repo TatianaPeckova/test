@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="test.2.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="searchWrapper">
+      <h1>Поиск по базе данных фильмов OMDB</h1>
+      <form class="searchForm">
+        <div class="inputWrapper">
+          <label for="searchInput">Поиск по названию</label>
+          <input id="searchInput" type="search" class="input" required />
+        </div>
+        <div class="inputWrapper">
+          <label for="typeInput">Тип:</label>
+          <select id="typeInput">
+            <option value="">Выберите тип</option>
+            <option value="movie">Фильм</option>
+            <option value="series">Сериал</option>
+          </select>
+        </div>
+        <div class="inputWrapper">
+          <label for="yearInput">Год выпуска</label>
+          <input id="yearInput" type="number" />
+        </div>
+        <button type="submit">Поиск</button>
+      </form>
+      <hr />
+      <div class="resultWrapper">
+        <h2>Результаты поиска</h2>
+        <div class="resultOutput"></div>
+      </div>
+    </div>
+    <script src="test2"></script>
+  </body>
+</html>

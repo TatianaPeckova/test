@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+}
+
+.searchForm {
+  margin-bottom: 25px;
+}
+
+.inputWrapper {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+
+.inputWrapper input,
+.inputWrapper select {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.inputWrapper label {
+  min-width: 150 px;
+}
+
+.searchForm button {
+  border: unset;
+  background: darkblue;
+  color: #fff;
+  padding: 7px 15px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.resultWrapper {
+  display: none;
+}
+
+.resultWrapper.isShown {
+  display: block;
+}
+
+.resultOutput {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.filmItem {
+  width: calc(33% - 20px);
+  padding: 5px;
+  margin: 5px 5px 5px 0;
+  border: 1px solid #b8b8b8;
+  display: flex;
+  flex-direction: column;
+}
+
+.filmItem img {
+  max-width: 100%;
+}
+
+.filmItem_year {
+  color: #b8b8b8;
+  margin-top: auto;
+}
